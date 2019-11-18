@@ -1,0 +1,9 @@
+section.app-cpnt.schedule {
+  padding-left: 0;
+}
+
+section.app-cpnt.schedule > .title {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px 0 40px;
+}

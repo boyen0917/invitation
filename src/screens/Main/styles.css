@@ -1,0 +1,6 @@
+section.app-cpnt.main {
+  position: fixed;
+  width: 60%;
+  height: 100vh;
+  overflow: hidden;
+}

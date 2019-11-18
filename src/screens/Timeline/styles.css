@@ -1,0 +1,68 @@
+section.app-cpnt.timeline .event {
+  width: 350px;
+  margin: 0 auto 100px;
+}
+
+section.app-cpnt.timeline .event > span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+section.app-cpnt.timeline .event > span.col-1 {
+  width: 25%;
+  text-align: right;
+  margin-right: 5%;
+  font-size: 35px;
+}
+
+section.app-cpnt.timeline .event > span.col-1.special {
+  font-size: 20px;
+}
+
+section.app-cpnt.timeline .event > span.col-2 {
+  width: 65%;
+}
+
+section.app-cpnt.timeline .event > span.col-2 > div {
+  margin-bottom: 20px;
+}
+
+section.app-cpnt.timeline .event > section {
+  width: 300px;
+  margin: 50px auto;
+}
+
+section.app-cpnt.timeline .divide {
+  margin: 30px 0;
+  position: relative;
+}
+
+section.app-cpnt.timeline .divide > span {
+  display: inline-block;
+}
+
+section.app-cpnt.timeline .divide > span:first-child {
+  width: 185px;
+  white-space: nowrap;
+}
+
+section.app-cpnt.timeline .divide > span:last-child {
+  width: -webkit-calc(100% - 210px);
+  border: 1px solid #777;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+
+section.app-cpnt.timeline section.gallery > img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+section.app-cpnt.timeline .title-location {
+  margin: 80px auto 20px;
+  width: 200px;
+  text-align: center;
+  font-size: 30px;
+}
