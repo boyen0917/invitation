@@ -51,7 +51,7 @@ const MainBackground = (props) => {
               <div className={`title`}>
                 <font className={`title-special`}> &nbsp; Ivy & <br/> Brian </font>
               </div>
-              <div className={`desc`}>已經迫不急待的想與您一起見證我們的婚禮 <br/> 期待您的參與 </div>
+              <div className={`desc`}>我們衷心希望能有您的參與<br/>讓這個充滿意義的日子更加圓滿</div>
             </section>
           </section> 
         }

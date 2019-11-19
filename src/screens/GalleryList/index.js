@@ -3,15 +3,17 @@ import { connect } from 'react-redux';
 
 import './styles.css'
 
-const xxx = () => (
-  <section className={'app-cpnt xxx'}>
-  </section>
-)
+const GalleryList = ({galleryIndex}) => {
+  console.log("galleryIndex", galleryIndex);
+  return <section className={'app-cpnt gallery-list'}>
 
+  </section>
+}
 const mapStateToProps = state => ({
+  galleryList: state.dataReducer.galleryList
 });
 
 const mapDispatchToProps = dispatch => ({
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(xxx);
+export default connect(mapStateToProps, mapDispatchToProps)(GalleryList);

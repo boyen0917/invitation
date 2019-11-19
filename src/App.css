@@ -13,6 +13,12 @@ section.app-cpnt > .title {
   margin: 30px 0 40px;
 }
 
+.app-cpnt .divie {
+  width: 100%;
+  border-bottom: 2px solid #888;
+  margin-bottom: 30px;
+}
+
 @font-face {
   font-family: 'hsst';
   src: url('./font/hsst.ttf');

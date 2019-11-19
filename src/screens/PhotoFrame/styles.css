@@ -1,20 +1,17 @@
 section.app-cpnt.photo-frame {
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   position: relative;
 }
 
 section.app-cpnt.photo-frame > img.frame {
   z-index: 1;
-  width: 120%;
-  height: 130%;
-  left: -5%;
-  top: -20%;
+  width: 100%;
+  height: 100%;
 }
 
 section.app-cpnt.photo-frame > img {
   position: absolute;
   width: 100%;
-  height: 200px;
-  border-radius: 120px;
+  height: 100%;
 }

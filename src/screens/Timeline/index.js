@@ -12,15 +12,15 @@ const Timeline = props => (
     </div>
     {props.timelines.map(({time, title, address, gallery=[], map}, i) => {
       return <section key={i} className={'event'}>
-        <span className={'col-1'}>
+        <section className={'time'}>
           <div>{time[0]}</div>
           <div>~</div>
           <div>{time[1]}</div>
-        </span>
-        <span className={'col-2'}>
+        </section>
+        <section className={'main'}>
           <div className={'title'}>{title}</div>
           <div className={'address'}>{address}</div>
-        </span>
+        </section>
 
         <PhotoFrame imgSrc={gallery[0]}/>
 

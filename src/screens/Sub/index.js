@@ -6,6 +6,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import Welcome from '../Welcome';
 import GalleryPuzzle from '../GalleryPuzzle';
 import Schedule from '../Schedule';
+import Footer from '../Footer';
 // import Travel from '../Travel';
 
 import './styles.css';
@@ -20,6 +21,9 @@ const Sub = () => (
     </ScrollableAnchor>
     <ScrollableAnchor id={'gallery'}>
       <GalleryPuzzle />
+    </ScrollableAnchor>
+    <ScrollableAnchor id={'footer'}>
+      <Footer />
     </ScrollableAnchor>
     {/* <ScrollableAnchor id={'travel'}>
       <Travel />

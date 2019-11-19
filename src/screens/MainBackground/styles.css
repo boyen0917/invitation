@@ -45,17 +45,26 @@ section.app-cpnt.main-background .content.show-countdown > .bottom.countdown  {
 
 section.app-cpnt.main-background .bottom  {
   position: absolute;
-  top: 60%;
+  top: 0;
 }
 
 section.app-cpnt.main-background .title {
   font-size: 74px;
   line-height: 70px;
+  background: rgba(255,255,255,0.1);
+  width: 200px;
+}
+
+section.app-cpnt.main-background .title > font {
+  background: rgba(97, 97, 97, 0.1);
+  display: inline-block;
+  height: 120px;
 }
 
 section.app-cpnt.main-background .desc {
   margin-top: 20px;
-  font-size: 20px;
-  font-family: cursive;
+  font-size: 25px;
+  white-space: nowrap;
   line-height: 22px;
+  background: rgba(126, 126, 126, 0.1)
 }

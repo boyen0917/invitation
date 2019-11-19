@@ -6,6 +6,7 @@ import { getUsersSaga, getTime } from '../../actions';
 import styles from './styles';
 import Main from '../Main';
 import Sub from '../Sub';
+import GalleryList from '../GalleryList';
 
 
 import './styles.css';
@@ -13,15 +14,24 @@ import './styles.css';
 class Home extends Component {
   constructor() {
     super();
+
+
+    setInterval(() => {
+      this.props.getCurrentTime();
+    }, 1000)
+    
   }
 
   render() {
-    const { getCurrentTime } = this.props;
-    setTimeout(getCurrentTime, 1000);
+    // const { galleryIndex } = this.props;
+    // this.countdownClock();
+    
+    console.log('home props', this.props);
     return (
       <section className={'app-cpnt home'}>
         <Main />
         <Sub />
+        {/* {} */}
       </section>
     );
   }
@@ -31,7 +41,8 @@ class Home extends Component {
 
 
 const mapStateToProps = state => ({
-  currentTime: state.timeReducer.currentTime
+  currentTime: state.timeReducer.currentTime,
+  galleryIndex: state.galleryReducer.galleryIndex
 });
 
 const mapDispatchToProps = dispatch => ({

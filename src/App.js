@@ -7,7 +7,6 @@ import { Route, Switch } from 'react-router-dom';
 import store, { history } from './store';
 
 import Home from './screens/Home';
-import Temp from './screens/Temp';
 
 import 'semantic-ui-css/semantic.min.css';
 import './App.css';
@@ -19,11 +18,6 @@ export default class App extends Component {
       <Provider store={store}>
         <ConnectedRouter history={history}>
           <Switch>
-            {/* <Route path="/app">
-              <Route path="/temp">
-                <Temp />
-              </Route>
-            </Route> */}
             <Route path="/">
               <Home />
             </Route>

@@ -1,6 +1,6 @@
-import { SET_USERS, SET_GG } from '../constants';
+import { SET_USERS } from '../constants';
 
-const initialState = { users: [], gg: [] };
+const initialState = { users: [] };
 
 export default function setBrowserInfo(state = initialState, action) {
   switch (action.type) {
@@ -10,11 +10,6 @@ export default function setBrowserInfo(state = initialState, action) {
         users: action.users
       };
 
-    case SET_GG:
-      return {
-        ...state,
-        gg: action.gg
-      };
     default:
       return state;
   }

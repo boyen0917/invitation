@@ -1,39 +1,24 @@
 section.app-cpnt.timeline .event {
-  width: 350px;
+  width: 100%;
   margin: 0 auto 100px;
+  white-space: nowrap;
+  position: relative;
 }
 
-section.app-cpnt.timeline .event > span {
-  display: inline-block;
-  vertical-align: top;
-}
-
-section.app-cpnt.timeline .event > span.col-1 {
-  width: 25%;
-  text-align: right;
-  margin-right: 5%;
-  font-size: 35px;
-}
-
-section.app-cpnt.timeline .event > span.col-1.special {
-  font-size: 20px;
-}
-
-section.app-cpnt.timeline .event > span.col-2 {
-  width: 65%;
-}
-
-section.app-cpnt.timeline .event > span.col-2 > div {
-  margin-bottom: 20px;
-}
 
 section.app-cpnt.timeline .event > section {
-  width: 300px;
+  width: 250px;
   margin: 50px auto;
 }
 
+section.app-cpnt.timeline .event > section.time {
+  position: absolute;
+  top: 0;
+  margin: 0;
+}
+
 section.app-cpnt.timeline .divide {
-  margin: 30px 0;
+  margin: 30px;
   position: relative;
 }
 

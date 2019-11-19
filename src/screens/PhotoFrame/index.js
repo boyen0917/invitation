@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import './styles.css'
-import frame from '../../images/common/frame2.png'
+import frame from '../../images/common/frame4.png'
 
 export default ({imgSrc=''}) => (
   <section className={'app-cpnt photo-frame'}>
