@@ -1,0 +1,6 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/prv74vc74efo/public_html/
+ - /bin/cp build/index.html $DEPLOYPATH
+ - /bin/cp -R build/* $DEPLOYPATH
