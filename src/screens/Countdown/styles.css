@@ -1,0 +1,22 @@
+section.app-cpnt.countdown {
+  white-space: nowrap;
+}
+
+section.app-cpnt.countdown.vertical {
+  font-family: 'Sacramento', cursive;
+}
+
+
+section.app-cpnt.countdown.vertical > span:first-child {
+  text-align: right;
+  margin-right: 20px;
+  line-height: 47px;
+  font-size: 35px;
+}
+
+section.app-cpnt.countdown.vertical > span {
+  display: inline-block;
+  width: 100px;
+  line-height: 45px;
+  font-size: 50px;
+}

@@ -1,0 +1,10 @@
+section.app-cpnt.footer {
+  min-height: 200px;
+}
+
+section.app-cpnt.footer > div {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin: 100px 0;
+}

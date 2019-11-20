@@ -1,0 +1,69 @@
+section.app-cpnt.main-background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+section.app-cpnt.main-background > section.countdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  margin: 50% 10% 10%;
+}
+
+section.app-cpnt.main-background > section.theme {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+section.app-cpnt.main-background > section.theme.active {
+  opacity: 1;
+}
+
+section.app-cpnt.main-background .content  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 10% 20% 25% 10%;
+  color: white;
+}
+
+section.app-cpnt.main-background .content.show-countdown > .bottom.countdown  {
+  display: block;
+}
+
+section.app-cpnt.main-background .bottom  {
+  position: absolute;
+  top: 0;
+}
+
+section.app-cpnt.main-background .title {
+  font-size: 74px;
+  line-height: 70px;
+  background: rgba(255,255,255,0.1);
+  width: 200px;
+}
+
+section.app-cpnt.main-background .title > font {
+  display: inline-block;
+  height: 120px;
+}
+
+section.app-cpnt.main-background .desc {
+  margin-top: 20px;
+  font-size: 25px;
+  white-space: nowrap;
+  line-height: 22px;
+  background: rgba(126, 126, 126, 0.21);
+}

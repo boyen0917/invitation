@@ -1,0 +1,71 @@
+section.app-cpnt.timeline .event {
+  width: 100%;
+  margin: 0 auto 100px;
+  white-space: nowrap;
+  position: relative;
+}
+
+
+section.app-cpnt.timeline .event > section {
+  width: 60%;
+  margin: 50px auto;
+}
+
+section.app-cpnt.timeline .event > section.time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 25px;
+  padding-left: -webkit-calc(20% - 60px);
+}
+
+section.app-cpnt.timeline .event > section.time > div:nth-child(2) {
+  width: 50px;
+  text-align: right;
+}
+
+section.app-cpnt.timeline .event > section.map > div {
+  width: 250px;
+  margin-left: -webkit-calc(50% - 125px);
+}
+
+section.app-cpnt.timeline .divide {
+  margin: 30px;
+  position: relative;
+}
+
+section.app-cpnt.timeline .divide > span {
+  display: inline-block;
+}
+
+section.app-cpnt.timeline .divide > span:first-child {
+  width: 185px;
+  white-space: nowrap;
+}
+
+section.app-cpnt.timeline .divide > span:last-child {
+  width: -webkit-calc(100% - 210px);
+  border: 1px solid #777;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+
+section.app-cpnt.timeline section.gallery > img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+section.app-cpnt.timeline .title-location {
+  margin: 80px auto 20px;
+  width: 200px;
+  text-align: center;
+  font-size: 30px;
+}
+
+section.app-cpnt.timeline .event > section.map {
+  overflow: hidden;
+}

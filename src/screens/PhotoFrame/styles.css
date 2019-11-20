@@ -1,0 +1,17 @@
+section.app-cpnt.photo-frame {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+section.app-cpnt.photo-frame > img.frame {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+section.app-cpnt.photo-frame > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
