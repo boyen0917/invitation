@@ -51,7 +51,7 @@ const MainBackground = (props) => {
               <div className={`title`}>
                 <font className={`title-special`}> &nbsp; Ivy & <br/> Brian </font>
               </div>
-              <div className={`desc`}>4我們衷心希望能有您的參與<br/>讓這個充滿意義的日子更加圓滿</div>
+              <div className={`desc`}>4555我們衷心希望能有您的參與<br/>讓這個充滿意義的日子更加圓滿</div>
             </section>
           </section> 
         }
