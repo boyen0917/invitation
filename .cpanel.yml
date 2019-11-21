@@ -1,6 +1,6 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/tfz1ztry65x3/public_html/
+ - export DEPLOYPATH=/home/frkg91wradws/public_html/
  - /bin/cp build/index.html $DEPLOYPATH
  - /bin/cp -R build/* $DEPLOYPATH
