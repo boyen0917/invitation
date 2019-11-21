@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
-import usersReducer from './users';
 import dataReducer from './data';
 import timeReducer from './time';
 import galleryReducer from './gallery';
+import afterpartyReducer from './afterparty';
 
 export default combineReducers({
-  usersReducer,
   dataReducer,
   timeReducer,
-  galleryReducer
+  galleryReducer,
+  afterpartyReducer
 });

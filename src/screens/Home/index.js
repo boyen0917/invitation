@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { getUsersSaga, getTime } from '../../actions';
+import { getTime } from '../../actions';
 
-import styles from './styles';
 import Main from '../Main';
 import Sub from '../Sub';
-import GalleryList from '../GalleryList';
-
 
 import './styles.css';
 
@@ -22,16 +19,24 @@ class Home extends Component {
     
   }
 
+  // componentDidMount() {
+  //   let self = this;
+  //   let timer = null;
+  //   window.addEventListener('scroll', () => {
+  //     clearTimeout(timer);
+  //     timer = setTimeout(
+  //       () => !window.location.hash && (window.location = "#"), 
+  //       1000
+  //     )
+      
+  //   })
+  // }
+
   render() {
-    // const { galleryIndex } = this.props;
-    // this.countdownClock();
-    
-    console.log('home props', this.props);
     return (
       <section className={'app-cpnt home'}>
         <Main />
         <Sub />
-        {/* {} */}
       </section>
     );
   }
@@ -42,11 +47,11 @@ class Home extends Component {
 
 const mapStateToProps = state => ({
   currentTime: state.timeReducer.currentTime,
-  galleryIndex: state.galleryReducer.galleryIndex
+  galleryIndex: state.galleryReducer.galleryIndex,
 });
 
 const mapDispatchToProps = dispatch => ({
-  getCurrentTime: () => dispatch(getTime(new Date()))
+  getCurrentTime: () => dispatch(getTime(new Date())),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import './styles.css';
 import PhotoFrame from '../PhotoFrame'
+import Afterparty from '../Afterparty'
 
 const Timeline = props => (
   <section className={'app-cpnt timeline'}>
@@ -10,7 +11,13 @@ const Timeline = props => (
       <span>SUNDAY JANUARY, 12, 2020</span>
       <span></span>
     </div>
-    {props.timelines.map(({time, title, address, gallery=[], map}, i) => {
+    {props.timelines.map(({
+      time, 
+      title, 
+      address, 
+      gallery=[], 
+      custom=false,
+      map}, i) => {
       return <section key={i} className={'event'}>
         <section className={'time'}>
           <div>{time[0]}</div>
@@ -23,6 +30,8 @@ const Timeline = props => (
         </section>
 
         <PhotoFrame imgSrc={gallery[0]}/>
+
+        {custom && <Afterparty />}
 
         {/* <section className={'gallery'}>
           <img src={gallery[0]}/>

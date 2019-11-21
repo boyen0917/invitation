@@ -1,10 +1,10 @@
 import { 
-  GET_USERS_SAGA, 
   SET_USERS, 
   GET_TIME,
   SET_GALLERY_INDEX,
   ADD_GALLERY_INDEX,
-  SUB_GALLERY_INDEX
+  SUB_GALLERY_INDEX,
+  SET_TICKET_STATUS
  } from '../constants';
 
 export function setUsers(users) {
@@ -43,9 +43,15 @@ export function subGalleryIndex(galleryIndex) {
   };
 }
 
-//Sagas
-export function getUsersSaga() {
+export function setTicketStatus() {
   return {
-    type: GET_USERS_SAGA
+    type: SET_TICKET_STATUS
   };
 }
+
+//Sagas
+// export function getUsersSaga() {
+//   return {
+//     type: GET_USERS_SAGA
+//   };
+// }

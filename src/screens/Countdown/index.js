@@ -34,7 +34,7 @@ const Countdown = ({currentTime, type}) => {
         {timeData.hourLeft} &nbsp; 時 &nbsp;
         {timeData.minLeft} &nbsp; 分 &nbsp;
         {timeData.secLeft} &nbsp; 秒 &nbsp;
-        &nbsp; {timeData.isPositive ? '' : 'Ago'}
+        {timeData.isPositive ? '' : <font>結婚起始</font>}
       </section>
 }
 

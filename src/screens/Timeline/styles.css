@@ -68,6 +68,15 @@ section.app-cpnt.timeline .event > section.map {
 
 section.app-cpnt.timeline .event > .main {
   white-space: initial;
+  font-size: 25px;
+}
+
+
+
+section.app-cpnt.timeline .event > .main > .title {
+  padding-top: 3px;
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 1000px) {

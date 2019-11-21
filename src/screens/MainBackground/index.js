@@ -18,7 +18,6 @@ const backgrounds = [
 
 
 const MainBackground = (props) => {
-  console.log("scroll", props);
   return <section className={'app-cpnt main-background'}>
 
     {props.isShowCountdown ? 
