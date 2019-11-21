@@ -7,24 +7,20 @@ section.app-cpnt.timeline .event {
 
 
 section.app-cpnt.timeline .event > section {
-  width: 60%;
+  width: 250px;
   margin: 50px auto;
 }
 
 section.app-cpnt.timeline .event > section.time {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -webkit-calc(50% - 190px);
   margin: 0;
-  width: 100%;
+  width: 55px;
   font-size: 25px;
-  padding-left: -webkit-calc(20% - 60px);
-}
-
-section.app-cpnt.timeline .event > section.time > div:nth-child(2) {
-  width: 50px;
   text-align: right;
 }
+
 
 section.app-cpnt.timeline .event > section.map > div {
   width: 250px;
@@ -68,4 +64,18 @@ section.app-cpnt.timeline .title-location {
 
 section.app-cpnt.timeline .event > section.map {
   overflow: hidden;
+}
+
+section.app-cpnt.timeline .event > .main {
+  white-space: initial;
+}
+
+@media screen and (max-width: 1000px) {
+  section.app-cpnt.timeline .event > section {
+    width: 60%;
+  }
+  section.app-cpnt.timeline .event > section.time {
+    left: -webkit-calc(20% - 65px);
+  }
+  
 }
