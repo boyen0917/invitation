@@ -1,6 +1,7 @@
 section.app-cpnt.footer {
   padding: 10%;
   height: 100vh;
+  position: relative;
 }
 
 section.app-cpnt.footer > div {
@@ -12,4 +13,28 @@ section.app-cpnt.footer > div {
 
 section.app-cpnt.footer > .frame > img {
   width: 100%;
+}
+
+section.app-cpnt.footer .title-special {
+  white-space: nowrap;
+  font-size: 30px;
+}
+
+section.app-cpnt.footer section.last {
+  position: absolute;
+  left: 10%;
+  bottom: 40px;
+  width: 90%;
+  text-align: left;
+  white-space: nowrap;
+}
+
+section.app-cpnt.footer section.last > div:last-child {
+  margin-top: 10px;
+}
+
+section.app-cpnt.footer section.last > div:last-child > span {
+  margin-right: 10px;
+  padding-right: 10px;
+  cursor: not-allowed;
 }

@@ -20,9 +20,8 @@ const backgrounds = [
   {name: 'footer', img: footer, isShowCountdown: false}
 ]
 
-
-const MainBackground = (props) => {
-  return <section className={'app-cpnt main-background'}>
+const MainBackground = (props) => 
+  <section className={'app-cpnt main-background'}>
 
     {props.isShowCountdown ? 
       <section className={'countdown'}>
@@ -61,7 +60,6 @@ const MainBackground = (props) => {
       </section>
     )}
   </section>
-}
 
 
 const mapStateToProps = state => ({

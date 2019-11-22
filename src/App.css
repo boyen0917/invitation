@@ -1,11 +1,16 @@
 
 body,div {
-  font-family: 'hsst';
+  font-family: 'hsst', 'cursive';
 }
 
 font.title-special {
   font-family: 'Sacramento', cursive;
 }
+
+#root > section.app-cpnt {
+  overflow: auto;
+}
+
 
 section.app-cpnt > .title {
   text-align: center;
