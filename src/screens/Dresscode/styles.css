@@ -1,0 +1,59 @@
+section.app-cpnt.dresscode {
+  overflow: auto;
+}
+
+section.app-cpnt.dresscode > .divide {
+  font-size: 30px;
+
+}
+
+section.app-cpnt.dresscode > .divide > span:last-child {
+  width: -webkit-calc(100% - 130px);
+}
+
+
+
+section.app-cpnt.dresscode > section.desc {
+  font-size: 25px;
+  width: 80%;
+    margin: auto;
+}
+
+section.app-cpnt.dresscode > section.desc > .row {
+  margin-bottom: 20px;
+  white-space: nowrap;
+
+}
+
+section.app-cpnt.dresscode > section.desc > .row > span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+section.app-cpnt.dresscode > section > .row > span:first-child {
+  width: 60px;
+}
+
+section.app-cpnt.dresscode > section > .row > span:last-child {
+  width: 80%;
+  white-space: initial;
+}
+
+
+section.app-cpnt.dresscode .gallery > img {
+  width: 60%;
+  display: block;
+  margin: 80px auto 80px;
+  border-radius: 2px;
+}
+
+
+@media screen and (max-width: 380px) {
+  section.app-cpnt.dresscode > section > .row > span:first-child {
+    width: 50px;
+  }
+
+  section.app-cpnt.dresscode .gallery > img {
+    width: 80%;
+  }
+}

@@ -4,14 +4,15 @@ section.app-cpnt.afterparty > .title {
 
 section.app-cpnt.afterparty img {
   width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
-section.app-cpnt.afterparty > .ticket img:hover {
+section.app-cpnt.afterparty > .ticket {
   cursor: zoom-in;
 }
 
-
+/* detail */
 section.app-cpnt.afterparty section.ticket-detail {
   position: fixed;
   top: 0;
@@ -21,43 +22,71 @@ section.app-cpnt.afterparty section.ticket-detail {
   z-index: 1;
   padding: 10%;
   background: rgba(0,0,0,0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+section.app-cpnt.afterparty section.ticket-detail.active {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+section.app-cpnt.afterparty section.ticket-detail > div {
+  position: relative;
+  cursor: zoom-out;
 }
 
 
-section.app-cpnt.afterparty section.ticket-detail > button {
-  background: #90909000;
+section.app-cpnt.afterparty section.ticket-detail > div.pic1 {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+
+
+section.app-cpnt.afterparty section.ticket-detail > div.pic2 {
+  display: none;
+}
+
+section.app-cpnt.afterparty section.ticket-detail button {
+  background: none;
   border: 0;
+  font-size: 20px;
   outline: none;
-  top: -webkit-calc(10% + 50px);
-  position: absolute;
-  right: -webkit-calc(10% + 10px);
-  border-radius: 40px;
-  text-align: center;
-  color: #b5b5b5;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  box-shadow: 3px 3px 9px #bbb;
 }
 
-section.app-cpnt.afterparty section.ticket-detail > button > i {
+section.app-cpnt.afterparty section.ticket-detail button > i {
   margin: 0;
+}
+
+section.app-cpnt.afterparty > .sub-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
 }
 
 
 @media screen and (max-width: 380px) {
-  section.app-cpnt.afterparty section.ticket-detail > img {
-    transform: rotate(90deg);
-    width: 95vh;
-    position: absolute;
-    top: 30%;
-    right: -35%;
+  section.app-cpnt.timeline section.app-cpnt.afterparty {
+    width: 250px;
   }
 
-  section.app-cpnt.afterparty section.ticket-detail > button {
-    top: 4vh;
-    background: rgb(255, 255, 255);
-}
+  section.app-cpnt.afterparty section.ticket-detail > div.pic1 {
+    display: none;
+  }
+
+  section.app-cpnt.afterparty section.ticket-detail > div.pic2 {
+    display: block;
+    width: 100%;
+    height: -webkit-calc(100% - 50px);
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  
 }
 
 

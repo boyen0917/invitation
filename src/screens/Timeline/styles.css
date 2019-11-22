@@ -89,7 +89,7 @@ section.app-cpnt.timeline .event > .main > .title {
 
   section.app-cpnt.photo-frame>img {
     width: 250px;
-    left: -25%;
+    left: -webkit-calc(50% - 125px);
   }
   
   section.app-cpnt.timeline .event>section.map {
@@ -98,5 +98,9 @@ section.app-cpnt.timeline .event > .main > .title {
 
   section.app-cpnt.timeline .event>.main>.address {
     width: 220px;
+  }
+
+  section.app-cpnt.photo-frame>img.inner {
+    width: 250px;
   }
 }

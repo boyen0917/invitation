@@ -10,13 +10,36 @@ font.title-special {
 section.app-cpnt > .title {
   text-align: center;
   font-size: 40px;
-  margin: 30px 0 40px;
+  margin: 60px 0 40px;
 }
 
 .app-cpnt .divie {
   width: 100%;
   border-bottom: 2px solid #888;
   margin-bottom: 30px;
+}
+
+
+section.app-cpnt > .divide {
+  margin: 30px;
+  position: relative;
+}
+
+section.app-cpnt > .divide > span {
+  display: inline-block;
+}
+
+section.app-cpnt > .divide > span:first-child {
+  width: 185px;
+  white-space: nowrap;
+}
+
+section.app-cpnt > .divide > span:last-child {
+  width: -webkit-calc(100% - 210px);
+  border: 1px solid #777;
+  position: absolute;
+  right: 10px;
+  top: 7px;
 }
 
 @font-face {

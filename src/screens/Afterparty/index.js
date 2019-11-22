@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 
 import './styles.css'
 
-import ticket from '../../images/afterparty.jpg'
+import ticket1 from '../../images/afterparty1.png'
+import ticket2 from '../../images/afterparty2.png'
 import { Icon } from 'semantic-ui-react'
 
 import { setTicketStatus } from '../../actions';
@@ -16,19 +17,26 @@ const Afterparty = props =>
       className={'ticket'} 
       onClick={props.setTicketStatus} 
     >
-      <img src={ticket}/>
+      <img src={ticket1}/>
     </div>
 
-    {props.isShowTicket && 
-      <section className={'ticket-detail'}>
-        <img src={ticket} />
-        <button
-          onClick={props.setTicketStatus} 
-        >
-          <Icon name='close' size='small' />
-        </button>
-      </section>
-    }
+    <div className={'sub-title'}>憑券入場唷</div>
+
+    <section className={`ticket-detail ${props.isShowTicket ? 'active' : ''}`}>
+      <div 
+        className={'pic1'} 
+        onClick={props.setTicketStatus} 
+      >
+        <img src={ticket1}/>
+      </div>
+      <div 
+        className={'pic2'} 
+        onClick={props.setTicketStatus} 
+      >
+        <img src={ticket2}/>
+      </div>
+      
+    </section>
 
   </section>
 

@@ -1,7 +1,11 @@
 section.app-cpnt .gallery-puzzle {
   height: 100vh;
   padding: 0 10%;
+  max-width: 350px;
+  margin: auto;
 }
+
+
 section.app-cpnt .puzzle {
   width: 90%;
   height: 400px;
@@ -68,5 +72,5 @@ section.app-cpnt.gallery-puzzle > .frame > img {
 }
 
 section.app-cpnt.gallery-puzzle > .frame {
-  margin-top: 100px;
+  margin-top: 50px;
 }

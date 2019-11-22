@@ -8,7 +8,6 @@ import { setGalleryIndex } from '../../actions';
 const GalleryPuzzle = props =>
   <section className={'app-cpnt gallery-puzzle'}>
     <div className={'title'}><font className={'title-special'}>Gallery</font></div>
-    <div className={'divie'}></div>
     <section className={'frame'}>
       <img src={props.img}/>
     </section>

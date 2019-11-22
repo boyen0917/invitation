@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 import Welcome from '../Welcome';
+import Dresscode from '../Dresscode';
 import GalleryPuzzle from '../GalleryPuzzle';
 import Schedule from '../Schedule';
 import Footer from '../Footer';
@@ -15,6 +16,9 @@ const Sub = () => (
   <section className={'app-cpnt sub'}>
     <ScrollableAnchor id={'welcome'}>
       <Welcome />
+    </ScrollableAnchor>
+    <ScrollableAnchor id={'dresscode'}>
+      <Dresscode />
     </ScrollableAnchor>
     <ScrollableAnchor id={'schedule'}>
       <Schedule />
