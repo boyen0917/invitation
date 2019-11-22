@@ -1,5 +1,5 @@
 section.app-cpnt.footer {
-  min-height: 200px;
+  padding: 10%;
 }
 
 section.app-cpnt.footer > div {
@@ -7,4 +7,8 @@ section.app-cpnt.footer > div {
   text-align: center;
   font-size: 40px;
   margin: 100px 0;
+}
+
+section.app-cpnt.footer > .frame > img {
+  width: 100%;
 }

@@ -7,13 +7,15 @@ import './styles.css';
 
 import welcome from '../../images/main-background/welcome.png'
 import schedule from '../../images/main-background/schedule.png'
-import gallery from '../../images/main-background/travel.png'
+import gallery from '../../images/main-background/gallery.png'
+import footer from '../../images/main-background/footer.png'
 import Countdown from '../Countdown';
 
 const backgrounds = [
   {name: `welcome`, img: welcome, isShowCountdown: false},
   {name: `gallery`, img: gallery, isShowCountdown: false} ,
-  {name: `schedule`, img: schedule, isShowCountdown: true}
+  {name: `schedule`, img: schedule, isShowCountdown: true},
+  {name: `footer`, img: footer, isShowCountdown: false}
 ]
 
 

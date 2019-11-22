@@ -9,19 +9,22 @@ const GalleryPuzzle = props =>
   <section className={'app-cpnt gallery-puzzle'}>
     <div className={'title'}><font className={'title-special'}>Gallery</font></div>
     <div className={'divie'}></div>
-    <section className={'puzzle'}>
+    <section className={'frame'}>
+      <img src={props.img}/>
+    </section>
+    {/* <section className={'puzzle'}>
       {props.galleryList.slice(0, 4).map((gallery, i) =>
         <span key={i} num={i}>
           <div className={'cover'} onClick={() => props.setGalleryIndex(i)}>看大圖</div>
           <img src={gallery}/>
         </span>
       )}
-    </section>
+    </section> */}
   </section>
 
 
 const mapStateToProps = state => ({
-  galleryList: state.dataReducer.galleryList.slice(0, 4),
+  img: state.dataReducer.galleryList[0],
   currentPhoto: 0
 });
 

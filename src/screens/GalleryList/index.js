@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import './styles.css'
 
 const GalleryList = ({galleryIndex}) => {
-  console.log("galleryIndex", galleryIndex);
   return <section className={'app-cpnt gallery-list'}>
 
   </section>

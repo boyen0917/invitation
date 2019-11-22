@@ -62,3 +62,11 @@ section.app-cpnt .puzzle > span > div {
 section.app-cpnt .puzzle > span > div:hover {
   opacity: 0.7;
 }
+
+section.app-cpnt.gallery-puzzle > .frame > img {
+  width: 100%;
+}
+
+section.app-cpnt.gallery-puzzle > .frame {
+  margin-top: 100px;
+}
