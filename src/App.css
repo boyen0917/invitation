@@ -49,7 +49,7 @@ section.app-cpnt > .divide > span:last-child {
 
 @font-face {
   font-family: 'hsst';
-  src: url('http://inv.brianivywedding.com/font/hsst.ttf');
+  src: url('./font/hsst.ttf');
 }
 
 
