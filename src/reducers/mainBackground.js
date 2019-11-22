@@ -1,6 +1,6 @@
 import { SET_TEXT_SHOW } from '../constants';
 
-const initialState = { isTextShow: false };
+const initialState = { isTextShow: true };
 
 export default function setBrowserInfo(state = initialState, action) {
   switch (action.type) {
