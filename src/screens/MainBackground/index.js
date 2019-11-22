@@ -26,7 +26,7 @@ let isInitial = false;
 
 const MainBackground = props => {
 
-  // !isInitial && setTimeout(props.setTextShow, 10000);
+  !isInitial && setTimeout(props.setTextShow, 5000);
 
   return <section className={'app-cpnt main-background'}>
 
