@@ -81,10 +81,22 @@ section.app-cpnt.timeline .event > .main > .title {
 
 @media screen and (max-width: 1000px) {
   section.app-cpnt.timeline .event > section {
-    width: 60%;
+    width: 50%;
   }
   section.app-cpnt.timeline .event > section.time {
-    left: -webkit-calc(20% - 65px);
+    left: -webkit-calc(25% - 65px);
+  }
+
+  section.app-cpnt.photo-frame>img {
+    width: 250px;
+    left: -25%;
   }
   
+  section.app-cpnt.timeline .event>section.map {
+    overflow: visible;
+  }
+
+  section.app-cpnt.timeline .event>.main>.address {
+    width: 220px;
+  }
 }

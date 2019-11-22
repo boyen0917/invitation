@@ -27,7 +27,7 @@ export default () => ({
     ],
    }, {
     time: ['18:00 pm', '20:30 pm'],
-    title: '婚禮接待',
+    title: '晚宴開始',
     address: '台南市歸仁區和順路二段303號 戶外婚禮',
     gallery: [
       venue
