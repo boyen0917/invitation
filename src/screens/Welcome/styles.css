@@ -27,6 +27,7 @@ section.app-cpnt.welcome .content .bottom {
   top: 60%;
   width: 100%;
 }
+
 section.app-cpnt.welcome .city{
   font-size: 40px;
 }
@@ -39,4 +40,13 @@ section.app-cpnt.welcome .date {
 section.app-cpnt.welcome .location {
   margin: 30px 0 15px;
   font-size: 30px;
+}
+
+section.app-cpnt.welcome .content .bottom > *:not(.city) {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+section.app-cpnt.welcome .content .bottom.active > *:not(.city) {
+  opacity: 1;
 }

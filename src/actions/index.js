@@ -4,6 +4,7 @@ import {
   SET_GALLERY_INDEX,
   ADD_GALLERY_INDEX,
   SUB_GALLERY_INDEX,
+  SET_TEXT_SHOW,
   SET_TICKET_STATUS
  } from '../constants';
 
@@ -46,6 +47,13 @@ export function subGalleryIndex(galleryIndex) {
 export function setTicketStatus() {
   return {
     type: SET_TICKET_STATUS
+  };
+}
+
+export function setTextShow() {
+  return {
+    type: SET_TEXT_SHOW,
+    isTextShow: true
   };
 }
 
