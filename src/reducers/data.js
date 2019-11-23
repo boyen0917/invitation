@@ -34,7 +34,7 @@ export default () => ({
     ],
     map: '<div class="mapouter"><div class="gmap_canvas"><iframe width="250" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=%E6%BC%82%E4%BA%AE%E8%8E%8A%E5%9C%92&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/"></a></div><style>.mapouter{position:relative;text-align:right;height:200px;width:250px;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:250px;}</style></div>'
    }, {
-    time: ['21:30 pm', '00:00 pm'],
+    time: ['22:00 pm', '02:00 am'],
     title: 'After Party',
     address: 'The Bird Club 台南市中西區民權路二段192號',
     gallery: [

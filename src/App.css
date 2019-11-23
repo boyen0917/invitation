@@ -7,7 +7,8 @@ font.title-special {
   font-family: 'Sacramento', cursive;
 }
 
-#root > section.app-cpnt {
+section.app-cpnt.sub > section.app-cpnt {
+  min-height: 600px;
   overflow: auto;
 }
 
@@ -50,6 +51,7 @@ section.app-cpnt > .divide > span:last-child {
 @font-face {
   font-family: 'hsst';
   src: url('http://inv.brianivywedding.com/font/hsst.ttf');
+  src: url('./font/hsst.ttf');
 }
 
 
